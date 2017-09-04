@@ -1,0 +1,30 @@
+<footer>
+    <div class="container-fluid">
+		<div class="row">
+			
+			<div class="col-xs-8 col-sm-5 col-md-3 ">								
+				<img src="{{ site.baseurl }}/assets/img/footer/UL-LF2L.svg" class="img-responsive" alt="UL-LF2L Logo">
+			</div>
+
+			<div class="col-xs-4 col-sm-7 col-md-3 ">								
+				<img src="{{ site.baseurl }}/assets/img/footer/logo-ERPI.svg" class="img-responsive" alt="ERPI Logo">
+			</div>
+
+			<div class="col-xs-4 col-sm-7 col-md-5 ">
+				<div class="content-wrap">
+					<nav>
+					{% for item in site.data.settings.menu %}
+					<a href="{{ item.url }}">{{ item.name }}</a>
+					{% endfor %}
+					</nav>
+
+					<p class="copyrigth">Powered by Université de Lorraine &amp; ERPI</p>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	 </div>
+
+	
+</footer>

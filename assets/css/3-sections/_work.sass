@@ -1,0 +1,180 @@
+.section-work
+	background: $bgcolor
+	//height: 500px 
+	overflow-x: hidden	
+	padding-bottom: 100px
+
+/* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
+.noscript
+	display: none
+
+@each $proj in $projects
+	##{$proj}:checked ~ .work-belt .work-wrap .work-container noscript #content-#{$proj}
+		display: block
+
+.return
+	display: none
+
+.trigger
+	display: none
+
+	&:checked ~ .work-belt
+		left: -100%
+
+		.work-wrap .work-container
+			display: block
+/* End of gross / hackey CSS */
+
+.work-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition(all, 800ms)
+
+	&.slided
+		+transform(translate3d(-50%, 0, 0))
+
+.thumb-wrap, .work-wrap
+	width: 50%
+	float: left
+
+.thumb-container
+	display: block
+	max-width: 960px
+	margin: 0px auto
+	+clearfix
+
+	label
+		position: relative
+		display: block
+		float: left
+		width: 25%
+		cursor: pointer
+
+		.thumb-unit
+			display: block
+			overflow: hidden
+			//height: 400px
+			//width: 600px
+			margin: 10px
+
+			strong
+				display: block
+				padding: 0 9%
+				color: black
+				font:
+					weight: 300
+					size: 15px
+				text-transform: uppercase
+				line-height: 1.2
+				padding-bottom: 20px
+
+			img
+				
+				display: block				
+				//max-width: 100%
+				//padding-bottom: 100px
+				max-width: 100%
+
+
+		@media screen and (max-width: 760px)
+			width: 50%
+
+
+		.thumb-overlay
+			+position(absolute)
+			+align-items(center)
+			+justify-content(space-around)
+			+display(flex)
+			background: fade-out($accent, 0.1)
+			text-align: center
+			@extend %animationstart_#{$animation}
+			max-width: 100%
+			
+
+			p
+				display: block
+				padding: 0 9%
+				color: white
+				font:
+					weight: 300
+					size: 18px			
+				line-height: 1.2
+				text-align: left
+
+		&:hover
+			z-index: 2
+
+			.thumb-overlay
+				@extend %#{$animation}
+
+
+.work-container
+	max-width: 900px
+	margin: 0px auto
+	padding: 0 15px
+	+box-sizing(border-box)
+
+	position: relative
+	display: none
+
+	h4, noscript h4
+		color: $accent
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 28px
+		line-height: 1.2
+		margin: 50px 0 15px
+
+	figure
+		display: inline-block
+		margin: 1em 10px
+
+
+	img
+		//max-width: 100%
+		padding: 0 20px
+		margin: 0 0 5px
+
+		//border: 1px solid #323232
+		//border-radius: 10px
+		//box-shadow: 0px 2px 20px rgba(50, 50, 50, .5)
+
+
+	figcaption
+		display: block
+		padding-left: 5px
+
+
+	.work-return
+		+size(40px)
+		cursor: pointer
+		opacity: 0.5
+		+position(absolute, -4px null null -60px)
+
+		path
+			fill: rgba(0,0,0,0.4)
+
+		&:hover
+			opacity: 1
+
+
+
+@media (max-width: 740px)
+	.work-container
+
+		.work-return
+			left: 0px
+
+		h4
+			margin-left: 60px
+
+
+.work-reference
+	.author-face
+		//min-width: 100px
+		text-align: center
+
+		img
+			max-width: 100px
+			border-radius: 50%
