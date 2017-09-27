@@ -55,7 +55,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-include: ["prueba" ]
+include: ["prueba"]
 
 
 # Exclude from processing.
