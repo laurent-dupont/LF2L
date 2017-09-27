@@ -1,0 +1,51 @@
+
+<nav class="navbar navbar-toggleable-md" id="Navigation">
+
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+  
+  <!-- Adding the LF2L Brand -->
+  <a class="navbar-brand sr-only" href="#">Menu</a>
+
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    
+	<ul class="navbar-nav mr-auto">
+	        
+	        {% assign links = site.data.navigation %}
+	        {% for link in links %}
+	            {% assign class = nil %}
+
+	            {% if page.url contains link.url %}
+	                {% assign class = 'active' %}
+	            {% endif %}
+
+	            {% if link.sublinks %}
+	                <li class="nav-item dropdown {{ class }}">
+	                    <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ link.url }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} 
+	                    	<span class="caret"></span></a>
+	                    
+		                    <div class="dropdown-menu">
+		                        {% for sublink in link.sublinks %}
+		                            {% if sublink.title == 'separator' %}
+									<div class="dropdown-divider"></div>
+		                                <!-- <li role="separator" class="divider"></li> -->
+		                            {% else %}		                                
+									<a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+		                                
+		                            {% endif %}
+		                        {% endfor %}
+		                    </div>
+	                </li>
+	            {% else %}
+	                <li class="nav-item">
+	                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+	                </li>
+	            {% endif %}
+	        {% endfor %}
+	    </ul>
+
+	</div>
+</nav>

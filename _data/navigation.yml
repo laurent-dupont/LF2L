@@ -1,0 +1,45 @@
+- title: Accueil
+  url: /
+- title: Concept
+  url: Sections/Concept/index.html
+  sublinks:
+    - title: Fab Living Lab... Qu'est ce que c'est?
+      url: /faq.html
+    - title: Publication Scientifiques LF2L/ERPI
+      url: /documentation.html
+    - title: On parle de nous
+      url: /documentation.html
+    - title: Partenaires et Chartes
+      url: /customer-support.html
+- title: Communauté
+  url: /contact.html
+  sublinks:
+    - title: Fab Living Lab... Qu'est ce que c'est?
+      url: /faq.html
+    - title: Publication Scientifiques LF2L/ERPI
+      url: /documentation.html
+    - title: On parle de nous
+      url: /documentation.html
+    - title: Partenaires et Chartes
+      url: /customer-support.html
+- title: Lieu & Equipement
+  url: /store.html
+  sublinks:
+    - title: Fab Living Lab... Qu'est ce que c'est?
+      url: /faq.html
+    - title: Publication Scientifiques LF2L/ERPI
+      url: /documentation.html
+    - title: On parle de nous
+      url: /documentation.html
+    - title: Partenaires et Chartes
+      url: /customer-support.html
+- title: Info pratiques
+  url: /support.html
+  sublinks:
+    - title: FAQ
+      url: /faq.html
+    - title: Documentation
+      url: /documentation.html
+    - title: separator
+    - title: Customer Support
+      url: /customer-support.html
