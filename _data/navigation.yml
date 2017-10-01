@@ -4,29 +4,31 @@
   url: Sections/Concept/index.html
   sublinks:
     - title: Fab Living Lab... Qu'est ce que c'est?
-      url: /prueba/index.html
+      url: /Sections/Concept/FabLivingLab/
     - title: Publication Scientifiques LF2L/ERPI
-      url: /documentation.html
+      url: /Sections/Concept/Publications-ERPI-LF2L/
     - title: On parle de nous
-      url: /documentation.html
+      url: /Sections/Concept/Presse/
     - title: Partenaires et Chartes
-      url: /customer-support.html
+      url: /Sections/Concept/Partners-Chartes/
 - title: Communauté
   url: /contact.html
   sublinks:
-    - title: Fab Living Lab... Qu'est ce que c'est?
-      url: /faq.html
-    - title: Publication Scientifiques LF2L/ERPI
-      url: /documentation.html
-    - title: On parle de nous
-      url: /documentation.html
-    - title: Partenaires et Chartes
+    - title: Entreprises
+      url: /Sections/Communautes/Entreprises/
+    - title: Makers
+      url: /Sections/Communautes/Makers/
+    - title: Etudiants
+      url: /Sections/Communautes/Etudiants/
+    - title: Universitaires
+      url: /Sections/Communautes/Universitaires/
+    - title: Institutions et collectivités
       url: /customer-support.html
 - title: Lieu & Equipement
   url: /store.html
   sublinks:
-    - title: Fab Living Lab... Qu'est ce que c'est?
-      url: /faq.html
+    - title: Notre espace aux ateliers du bras vert
+      url: /Sections/Lieu-Equipement/Lieu-Equipement/
     - title: Publication Scientifiques LF2L/ERPI
       url: /documentation.html
     - title: On parle de nous

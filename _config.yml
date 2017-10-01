@@ -25,7 +25,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # # Serving
 # detach:  false
-# port:    8000
+port:    8000
 # host:    127.0.0.1
 # baseurl: "" # does not include hostname
 # show_dir_listing: false
