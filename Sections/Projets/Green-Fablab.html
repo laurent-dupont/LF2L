@@ -143,15 +143,21 @@ Image-Logo: Logo-GF.png
 
 		{% for Projets in site.data.projets.Green-Fablab %}			 
 
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
 			    <div class="hovereffect">
 			        <img class="img-fluid" src="{{ site.baseurl}}/assets/img/{{page.Folder-Images}}/articles/{{ Projets.folder}}/thumb.png" alt="">
 			        <div class="overlay">
-			           <h2>{{ Projets.name }}</h2>
-			           <a class="info" href="#">{{ Projets.description }}</a>
+						<h2>{{ Projets.name }}</h2>
+						<a class="info" >Prueba</a>
+						<a class="info" data-toggle="modal" data-target="#exampleModalLong" >{{ Projets.description }}</a>
+						<a class="info" data-toggle="modal" data-target="#exampleModalLong">More Details</a>
+
+						{% include Projets/Green-Fablab/proj-1/description.html %}
+
 			        </div>
 			    </div>
 			</div>
+			
 	
       	{% endfor %}
       </div>
@@ -164,6 +170,9 @@ Image-Logo: Logo-GF.png
 
 
 
+
+
+<!-- Nos Etudiants -->
 <section>
 	<div class="jumbotron">
 		<div class="container">
@@ -172,32 +181,28 @@ Image-Logo: Logo-GF.png
 
 	 		<div class="row">
 		
+
 				<div id="Controles-Equiper-GF" class="carousel slide" data-ride="carousel" data-interval="8000">
 					
-					<ol class="carousel-indicators">
-						<li data-target="#Controles-Equiper-GF" data-slide-to="0" class="active">
-							<img src="{{ site.baseurl}}/assets/img/{{ page.Folder-Images }}/logos/logo-CESI.jpg"> </li>
-						<li data-target="#Controles-Equiper-GF" data-slide-to="1"></li>
-						<li data-target="#Controles-Equiper-GF" data-slide-to="2"></li>
-					</ol>
-
+				
 					<div class="carousel-inner">
 						{% for banner in site.data.projets.Equipe-Green-Fablab %}
 						
 						<div class="carousel-item {{ banner.prioridad }}">	
-
+							
+						
 								<figure class="figure col-md-2">
 									<img src="{{ site.baseurl}}/assets/img/{{ page.Folder-Images }}/equipe/{{ banner.avatar }}" 
 									class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
 									<figcaption class="figure-caption">{{ banner.name}}.</figcaption>
-									<small>Someone famous</small>
+									<small>Someone famous</small>									
 								</figure>
-													
-								<blockquote  class="blockquote col-md-10 ">					
+				
+								<blockquote  class="blockquote col-md-10">					
 									{{ banner.quote}}
 									<small>Someone famous</small>
 				                </blockquote>
-												
+
 						</div>
 
 						{% endfor %}
@@ -219,7 +224,7 @@ Image-Logo: Logo-GF.png
 
 			</div>
 
-		</div>. <!-- Container  -->
+		</div> <!-- Container  -->
 	</div> <!-- Jumbotron  -->
 </section>
 

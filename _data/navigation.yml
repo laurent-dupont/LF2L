@@ -2,7 +2,7 @@
   url: /
 
 - title: Concept
-  url: Sections/Concept/index.html
+  url: Concept/
   sublinks:
     - title: Fab Living Lab... Qu'est ce que c'est?
       url: /Sections/Concept/FabLivingLab/
