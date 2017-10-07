@@ -2,17 +2,23 @@
 layout: default
 title: Green Fablab - LF2L
 
-Folder-Images: 5-Projets/Green-Fablab
+Folder-Images: /assets/img/5-Projets/Green-Fablab/
+Folder-Images-Proj-1: /assets/img/5-Projets/Green-Fablab/articles/proj-1/  
+
+
+
 Image-BG: BG-Title.jpg
 Image-Logo: Logo-GF.png
----
 
+
+
+---
 
 
 
 <section>
 	<!-- Image Background of the title-->
-	<div class="header-communautes" style="background-image: url( {{site.baseurl}}/assets/img/{{page.Folder-Images}}/{{ page.Image-BG }});"></div>
+	<div class="header-communautes" style="background-image: url( {{ site.baseurl | append: page.Folder-Images | append: page.Image-BG }});"></div>
 
 	<div class="container-fluid" id="Green-Fablab1">
 
@@ -24,7 +30,7 @@ Image-Logo: Logo-GF.png
 
 		<div class="row">
 			<div class="col-12">
-				<img src="{{ site.baseurl}}/assets/img/{{page.Folder-Images}}/{{ page.Image-Logo }}" class="img-fluid mx-auto d-block" alt="Green FabLab Title" style="width: 100%">		
+				<img src="{{ site.baseurl | append: page.Folder-Images | append: page.Image-Logo }}" class="img-fluid mx-auto d-block" alt="Green FabLab Title" style="width: 100%">		
 			</div>				
 		</div>
 
@@ -32,7 +38,8 @@ Image-Logo: Logo-GF.png
 		<div class="row justify-content-center">
 			<div class="col-4 col-sm-2  text-center">
 				<figure class="figure">
-					<img src="{{ site.baseurl}}/assets/img/{{page.Folder-Images}}/Icons/3DP.svg" class="figure-img img-fluid Icon"  
+					<img src="{{ site.baseurl | append: page.Folder-Images | append: "Icons/" | append: "3DP.svg" }}" 
+					class="figure-img img-fluid Icon"  
 					alt="Icon Fabrication">					
 					<figcaption class="figure-caption"><h4><b>Fabrication</b></h4></figcaption>
 				</figure>
@@ -41,7 +48,8 @@ Image-Logo: Logo-GF.png
 
 			<div class="col-4 col-sm-2  text-center">
 				<figure class="figure">
-					<img src="{{ site.baseurl}}/assets/img/{{page.Folder-Images}}/Icons/Recycling.svg" class="figure-img img-fluid Icon"  
+					<img src="{{ site.baseurl | append: page.Folder-Images | append: "Icons/" | append: "Recycling.svg" }}" 
+					class="figure-img img-fluid Icon"  
 					alt="Icon Recycling">					
 					<figcaption class="figure-caption"><h4><b>Recycling</b></h4></figcaption>
 				</figure>
@@ -50,7 +58,8 @@ Image-Logo: Logo-GF.png
 
 			<div class="col-4 col-sm-2  text-center">
 				<figure class="figure">
-					<img src="{{ site.baseurl}}/assets/img/{{ page.Folder-Images }}/Icons/Local.svg"  class="figure-img img-fluid Icon"  
+					<img src="{{ site.baseurl | append: page.Folder-Images | append: "Icons/" | append: "Local.svg"}}" 
+					class="figure-img img-fluid Icon"  
 					alt="Icon Local">					
 					<figcaption class="figure-caption"><h4><b>Local</b></h4></figcaption>
 				</figure>
@@ -93,7 +102,8 @@ Image-Logo: Logo-GF.png
 				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 			</div>
 			<div class="col-md-5">
-				<img class="featurette-image img-fluid mx-auto" src="{{ site.baseurl }}/assets/img/6-Lieu-Equipements/Creativite.png" alt="Seances de Creativité">							
+				<img class="featurette-image img-fluid mx-auto" 
+				src="http://placehold.it/400x300" alt="Seances de Creativité">							
 			</div>
 		</div>
 
@@ -101,7 +111,7 @@ Image-Logo: Logo-GF.png
 
 		<div class="row featurette">			
 			<div class="col-md-5 order-md-1">
-				<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				<img class="featurette-image img-fluid mx-auto" src="http://placehold.it/400x300" alt="Generic placeholder image">
 			</div>
 
 			<div class="col-md-7">
@@ -129,30 +139,20 @@ Image-Logo: Logo-GF.png
 	<div class="container">
 
       <div class="row text-center text-lg-left">
-			
-
-		
-
-		<!-- 		<div class="col-lg-3 col-md-4 col-xs-6">
-					<a href="#" class="d-block mb-4 h-100">
-					<img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-					</a>
-				</div> -->
 
 			 
-
 		{% for Projets in site.data.projets.Green-Fablab %}			 
 
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
 			    <div class="hovereffect">
-			        <img class="img-fluid" src="{{ site.baseurl}}/assets/img/{{page.Folder-Images}}/articles/{{ Projets.folder}}/thumb.png" alt="">
+			        <img class="img-fluid img-thumbnail" 
+			        src="{{site.baseurl | append: page.Folder-Images | append: "articles/" | append: Projets.folder | append: "thumb.png"}}" alt="">
 			        <div class="overlay">
-						<h2>{{ Projets.name }}</h2>
-						<a class="info" >Prueba</a>
-						<a class="info" data-toggle="modal" data-target="#exampleModalLong" >{{ Projets.description }}</a>
-						<a class="info" data-toggle="modal" data-target="#exampleModalLong">More Details</a>
-
-						{% include Projets/Green-Fablab/proj-1/description.html %}
+						<h2>{{ Projets.name }}</h2>						
+						<p class="info" data-toggle="modal" data-target="{{ Projets.id | prepend: "#"}} " >{{ Projets.description }} 
+							<br> <span class="more-details" style="float: right;">More details...</span></p>
+						
+						{% include Projets/Green-Fablab/{{ Projets.folder }}/description.html %}
 
 			        </div>
 			    </div>
@@ -192,8 +192,8 @@ Image-Logo: Logo-GF.png
 							
 						
 								<figure class="figure col-md-2">
-									<img src="{{ site.baseurl}}/assets/img/{{ page.Folder-Images }}/equipe/{{ banner.avatar }}" 
-									class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+									<img src="{{ site.baseurl | append: page.Folder-Images | append: "equipe/" | append: banner.avatar }}"
+									class="figure-img img-fluid rounded" alt="Students Green FabLab">
 									<figcaption class="figure-caption">{{ banner.name}}.</figcaption>
 									<small>Someone famous</small>									
 								</figure>

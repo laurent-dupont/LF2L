@@ -1,8 +1,12 @@
-Green-Fablab:
-- {name: Standard Protocol for OS 3D Printers, description: "Experimental protocol of geometrical performance evaluation in order to characterise OS 3D printers in a robust manner.", folder: 'proj-1', file: 'work/proj-1.html'}
-- {name: Polymer Recycling Methodology, description: "General methodology to evaluate the recyclability of polymers used as feedstock for 3D printing machines",  folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: Distributed Recycling, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quas beatae, odio atque, sapiente dolores maxime deserunt esse voluptas nulla eaque iusto autem libero, quisquam eligendi error architecto magnam numquam.",  folder: 'proj-3', file: 'work/proj-3.html'}
-- {name: Logistic Distributed Recycling,  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, aliquam, consectetur totam doloremque consequatur sapiente, repudiandae suscipit provident alias esse dolorem. Eaque enim placeat obcaecati dolor mollitia veritatis fugit!", folder: 'proj-4', file: 'work/proj-4.html'}
+
+Green-Fablab: 
+- {id: Standard-Protocol ,name: Standard Protocol for OS 3D Printers, description: "Experimental protocol of geometrical performance evaluation in order to characterise OS 3D printers in a robust manner.", folder: 'proj-1/', file: 'work/proj-1.html'}
+- {id: Polymer-Recycling ,name: Polymer Recycling Methodology, description: "General methodology to evaluate the recyclability of polymers used as feedstock for 3D printing machines",  folder: 'proj-2/', file: 'work/proj-2.html'}
+- {id: Distributed-Recycling,name: Distributed Recycling, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quas beatae, odio atque, sapiente dolores maxime deserunt esse voluptas nulla eaque iusto autem libero, quisquam eligendi error architecto magnam numquam.",  folder: 'proj-3/', file: 'work/proj-3.html'}
+- {id: Logistic-Distributed ,name: Logistic Distributed Recycling,  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, aliquam, consectetur totam doloremque consequatur sapiente, repudiandae suscipit provident alias esse dolorem. Eaque enim placeat obcaecati dolor mollitia veritatis fugit!", folder: 'proj-4/', file: 'work/proj-4.html'}
+# The ID for modal application is the two first words of the title XX-YY
+
+
 
 
 
