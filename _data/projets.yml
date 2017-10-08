@@ -1,14 +1,59 @@
+Green-Fablab:
+- {id: Standard-Protocol,
+  name: Standard Protocol for OS 3D Printers, 
+  description: "Experimental protocol of geometrical performance evaluation in order to characterise OS 3D printers in a robust manner.", 
+  folder: 'proj-1/', 
+  file: 'work/proj-1.html'}
+- {id: Polymer-Recycling,
+  name: Polymer Recycling Methodology, 
+  description: "General methodology to evaluate the recyclability of polymers used as feedstock for 3D printing machines",  
+  folder: 'proj-2/', 
+  file: 'work/proj-2.html'}
+- {id: Distributed-Recycling,
+  name: Distributed Recycling, 
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quas beatae, odio atque, sapiente dolores maxime deserunt esse voluptas nulla eaque iusto autem libero, quisquam eligendi error architecto magnam numquam.",  
+  folder: 'proj-3/', 
+  file: 'work/proj-3.html'}
+- {id: Logistic-Distributed,
+  name: Logistic Distributed Recycling,  
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, aliquam, consectetur totam doloremque consequatur sapiente, repudiandae suscipit provident alias esse dolorem. Eaque enim placeat obcaecati dolor mollitia veritatis fugit!", folder: 'proj-4/', file: 'work/proj-4.html'}
 
-Green-Fablab: 
-- {id: Standard-Protocol ,name: Standard Protocol for OS 3D Printers, description: "Experimental protocol of geometrical performance evaluation in order to characterise OS 3D printers in a robust manner.", folder: 'proj-1/', file: 'work/proj-1.html'}
-- {id: Polymer-Recycling ,name: Polymer Recycling Methodology, description: "General methodology to evaluate the recyclability of polymers used as feedstock for 3D printing machines",  folder: 'proj-2/', file: 'work/proj-2.html'}
-- {id: Distributed-Recycling,name: Distributed Recycling, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quas beatae, odio atque, sapiente dolores maxime deserunt esse voluptas nulla eaque iusto autem libero, quisquam eligendi error architecto magnam numquam.",  folder: 'proj-3/', file: 'work/proj-3.html'}
-- {id: Logistic-Distributed ,name: Logistic Distributed Recycling,  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, aliquam, consectetur totam doloremque consequatur sapiente, repudiandae suscipit provident alias esse dolorem. Eaque enim placeat obcaecati dolor mollitia veritatis fugit!", folder: 'proj-4/', file: 'work/proj-4.html'}
-# The ID for modal application is the two first words of the title XX-YY
 
-
-
-
+Authors:
+- name: Fabio A Cruz S.
+  ecole: ERPI
+  title: Ingénieur de Recherche.
+  linkedin: https://www.linkedin.com/in/fabio-cruz/
+  google-scholar: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=es
+  academia: https://univ-lorraine.academia.edu/FabioACruzS
+  researchgate: https://www.researchgate.net/profile/Fabio_Cruz_Sanchez
+  mendeley: https://www.mendeley.com/profiles/fabio-a-cruz-sanchez/    
+  photo: FC-200X200.jpg
+  articles: ['Standard-Protocol', 'Orange', 'Strawberry', 'Mango']
+- name: Hakim Boudaoud
+  ecole: ERPI
+  title: Maitre de Conferences
+  google-scholar: https://scholar.google.com/citations?user=9PF0MWEAAAAJ
+  photo: Hakim-Boudaoud.jpg
+  articles: ['Standard-Protocol', 'Orange', 'Strawberry', 'Mango'] 
+- name: Laurent Muller
+  ecole: ERPI
+  title: Chercheur Associé
+  linkedin: https://www.linkedin.com/in/laurent-muller-868398132/?ppe=1
+  photo: Laurent-MULLER-240x320.jpg
+  articles: ['Standard-Protocol', 'Orange', 'Strawberry', 'Mango']    
+- name: Sandrine Hoppe
+  ecole: LRGP
+  title: Professor des Universités
+  researchgate: https://www.researchgate.net/profile/Sandrine_Hoppe
+  photo: Sandrine-Hoppe.jpg
+  articles: ['Orange', 'Strawberry', 'Mango']
+- name: Mauricio Camargo
+  ecole: ERPI
+  title: Professor des Universités
+  google-scholar: https://scholar.google.com/citations?user=2o5hAtIAAAAJ
+  photo: Mauricio-Camargo.jpg
+  articles: ['Standard-Protocol', 'Orange', 'Strawberry', 'Mango'] 
 
 
 Equipe-Green-Fablab:

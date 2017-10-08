@@ -1,0 +1,295 @@
+---
+layout: slides
+title: Green Fablab Presentation
+description: What is Green Fablab and why is important
+transition: slide
+
+Images-Path: /assets/img/5-Projets/Green-Fablab/presentation/
+---
+
+
+<section>
+	
+	<div class="jumbotron">
+		<h1 class="display-2">Green FabLab</h1>	
+		<hr class="my-4">
+	 	<p class="lead">Towards a distributed and local plastic recycling for OS 3D printing</p>		
+	</div>
+
+	<br>
+	
+	<h6>Fabio A. Cruz Sanchez</h6>
+
+	<p>Équipe de Recherche sur les Processus Innovatifs (ERPI) <br>
+	Laboratoire Réactions et Génie des Procédés (LRGP)</p>
+	<br>
+
+
+	<img height="100px"  class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "logos/UL-LF2L.png" }}">
+	<img height="100px" class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "logos/ERPI.png" }}">	
+	<img height="100px" class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "logos/LRGP.png" }}">
+	
+
+
+</section>
+
+
+
+<section data-background="{{ site.baseurl | append: page.Images-Path | append: "Introduction/BG-Plastic.jpg" }}" data-background-size="cover" style="color: white; text-align: left; left: -100px; top: 50px">	
+
+	<h3 style="color: white; text-align: left;">The Challengue: <br>Reduction of Landfill</h3>	
+
+	<ul>
+		<li>Production Production (2015):
+			<ul>
+			 	<li>World: 322 Mt/year</li>
+			 	<li>Europe: 58 Mt/year (18.5%)</li>
+			 </ul> 
+		</li>
+
+		<li>Plastic Wastes (2015): 25.8 million tonnes </li>
+	</ul>
+	<br>		
+
+	<figure class="figure" style="color: white;">			
+		<img style="max-height: 250px" src="{{ site.baseurl | append: page.Images-Path | append: "Introduction/End-of-Life-Plastics.png" }}"
+		class="img-fluid plain my-0" >					
+		<figcaption class="figure-caption">
+			<p>Source: Plastics Europe</p>
+		</figcaption>
+	</figure>
+
+	<p>Plastics waste is a key resource towards <b>circular economy</b></p>	
+
+</section>
+
+<section style="font-size: 25px"> 
+	<div class="row">
+		<div class="col-12 col-md-4">
+			<p>17 Goals to transform our world</p>
+			<em>Goal 12: Ensuring sustainable consumption and production patters</em>
+			<img width="70%" src="{{ site.baseurl | append: page.Images-Path | append: "Introduction/UN/SD-Goals.png" }}">
+			<img width="70%"  src="{{ site.baseurl | append: page.Images-Path | append: "Introduction/EU-Circular-Economy.png" }}">				
+		</div>
+
+		<div class="col-12 col-md-8">
+			<ul>
+				<li>&#8220; The value of products and materials is maintained for as long as possible...&#8221;</li>				
+
+				<li>Rethinking products and services using principles based on:
+
+					<div class="row">
+						<div class="col-6">
+							<ul style="font-size: 20px">
+								<li> &#10003; durability</li>
+								<li>&#10003; renewability</li>
+								<li>&#10003; reuse</li>
+								<li>&#10003; repair</li>									
+							</ul> 
+						</div>		
+						<div class="col-6">
+							<ul style="font-size: 20px">									
+								<li>&#10003; replacement</li>
+								<li>&#10003; upgrades</li>
+								<li>&#10003; refurbishment</li>
+								<li>&#10003; reduced material use</li>
+							</ul> 
+						</div>
+					</div>	
+					
+				</li>
+				<br>
+				<li><b>Circular Economy Action Plan</b>
+					<ul>
+						<li>Production</li>
+						<li>Consumption</li>
+						<li>Waste management</li>
+						<li>From waste to resources</li>													
+						<li><b style="color: green">Strategy for Plastics</b><br>
+							<ul>
+								<li><em>Secondary raw materials</em></li>
+								<li>Quality standards for Second raw materials?</li>
+								<li>Clarification of "Waste"..</li>
+								<li>Legislation..</li>
+							</ul>
+
+						</li>
+					</ul>
+
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<h5 class="text-right"><b>Paradigm change:</b> <br> from linear economic model (<em>'take-make-dispose'</em>) to Circular</h5>
+					
+</section>
+	
+<section data-background="{{ site.baseurl | append: page.Images-Path | append: "Introduction/3DP.jpg" }}">
+	<h2 style="color: white; text-align: left;">The Opportunity: <br>Open Source (OS) 3D Printing</h2>			
+</section>
+
+<section style="text-align: left; font-size: 20px">
+
+	<h3>Fused Deposition Modeling (FDM)</h3>
+
+	<div class="row">
+		<div class="col-6 text-center">
+			<img  style="max-height: 300px" class="plain img-fluid" src="{{ site.baseurl | append: page.Images-Path | append: "Introduction/AM-Processes/FDM.png" }}">
+		</div>
+		<div class="col-6">
+			<table style="font-size: 25px">
+				<tr>
+					<th></th>
+					<th>Commercial</th> 
+					<th>Open Source</th>
+				</tr>
+				<tr>
+					<td>Principle</td>
+					<td>CAD + GCode + Printing</td> 
+					<td>CAD + GCode + Printing</td>
+				</tr>
+				<tr>
+					<td>Cost</td>
+					<td>Expensive (5.000&#8364; - 800&#8364;K)</td> 
+					<td>Low-cost (Under $5000)</td>
+				</tr>
+				<tr>
+					<td>Methodology</td>
+					<td>Closed Design (Patented)</td> 
+					<td>Open design</td>
+				</tr>
+
+				<tr>
+					<td>Printer</td>
+					<td>Standardized</td> 
+					<td>Personalized</td>
+				</tr>
+				<tr>
+					<td>Quality:</td>
+					<td>Assured by company.</td> 
+					<td style="color: red">Complex?</td>
+				</tr>
+
+			</table>
+			
+		</div>
+	</div>
+
+	
+	<br>
+
+	<ul>
+		<li>Expiration of patents (FDM patent in 2009)</li>
+		<li>Internet facilities</li>
+		<li>Common-Based Peer Production (Kostakis and Papachristou 2014)</li>
+	</ul>
+
+	<!-- <img style="box-shadow: none;  float: left; width: 10%" src="assets/figures/AM/FDM.jpg">			
+	<img style="box-shadow: none;  float: right; width: 10%" src="assets/figures/AM/FoldaRap.jpg">
+
+
+	<img style="box-shadow: none;  float: right; width: 25%" src="assets/figures/AM/3DP-Growth.jpg">
+
+	<img style="box-shadow: none;  float: left; width: 30%" src="assets/figures/RepRap.jpg"> -->
+
+
+		
+</section>
+
+
+<section data-background="{{ site.baseurl | append: page.Images-Path | append: "Introduction/LF2L.jpg" }}">
+	<h2 style="color: white; text-align: left;">The Way: <br>(OS) 3DP at the FabLab context</h2>			
+</section>
+
+<section>
+	<h2 style="padding-bottom: -10px;">What is a FabLab?</h2>
+
+	<img height="100" src="assets/figures/Hackerspaces.jpg">
+	<img height="100"  src="assets/figures/FabLab.png">
+	<img height="100"  src="assets/figures/Makerspace.png">
+
+	<p style="font-size: 20px">A fab lab (<b>fab</b>rication <b>lab</b>oratory) is a small-scale workshop offering (personal) digital fabrication.</p>
+
+					
+	<div >
+	<img height="350" style="border: none; float: left;" src="assets/figures/Fablab-Ecosystem.png">
+
+	<ul style="float: center; font-size: 25px; padding-top: 100px">
+		<li>Space to make (almost) anything responding to a local need</li>				
+		<li>Social dynamics of cooperation, collaboration</li>
+		<li>Local and global impact thanks to share information through the network</li>
+	</ul>
+
+	<p style="padding-top: 30px; text-align: center; clear: right;">Democratization tools for personal expression!</p>
+	</div>
+
+	<div class="Reference" >
+	<p style="position: relative; margin-top: 50px; opacity: 0.8; float: left;"> Morel, L., &amp; Le Roux, S. (2016). Fab Labs. Fab Labs. Hoboken, NJ, USA: John Wiley &amp; Sons, Inc.</p>
+	</div>
+
+
+	<!-- <div class="Reference" >
+	<p style="top: 0px; opacity: 0.5; float: right;"> American Society for Testing and Materials. F2792-12a Standard Terminology for Additive Manufacturing Technologies (2012). https://doi.org/10.1520/F2792-12A </p>
+	</div> -->
+	
+</section>
+
+<section>
+					
+	<h2>La vision de notre research...</h2>				
+
+
+	<div class="row align-items-center">
+		<div class="col-6">
+			
+			<p class="text-left">To propose a sustainable waste management option for plastic waste using the open-source additive manufacturing, in the context of prototyping spaces.</p>
+			
+			
+		</div>
+
+		<div class="col-6">
+			<img class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "Introduction/Research-Context.png" }}">
+		</div>
+		
+	</div>
+	
+	<p style="float: right; text-align: right; font-size: 30px">Nevertheless,  many issues have to be solved to achieve the <em style="color: green">Green FabLab vision</em></p>		
+
+</section>
+
+<!-- Research Questions -->
+				
+<section>			
+	<h2>Our current challengues</h2>
+	<ol>
+		<li><p>How can we evaluate the technical feasability to recycle plastic for 3D printing technology?</p></li>
+		<li>How can we establish a logistic model to collect the plastic for the FabLab?</li>
+	</ol>		
+</section>
+
+<section>
+	
+	<div class="jumbotron">
+	<h4>let's work together for a greener world with the 3D printing...</h4>
+	</div>
+
+	<br>
+	
+
+	<h6>Fabio A. Cruz Sanchez</h6>
+	
+
+
+	<p>Équipe de Recherche sur les Processus Innovatifs (ERPI) <br>
+	Laboratoire Réactions et Génie des Procédés (LRGP)</p>
+	<br>
+
+
+	<img height="100px"  class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "logos/UL-LF2L.png" }}">
+	<img height="100px" class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "logos/ERPI.png" }}">	
+	<img height="100px" class="plain" src="{{ site.baseurl | append: page.Images-Path | append: "logos/LRGP.png" }}">
+	
+
+
+</section>

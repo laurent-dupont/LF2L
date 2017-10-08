@@ -10,26 +10,24 @@
 			<!-- Header -->
 			<div class="modal-header">
 
-				<div class="jumbotron">
-				<h1 class="modal-title " id="{{ Projets.folder | append: "-" | append: Projets.id }}">Towards a standard experimental protocol for open source additive manufacturing.</h1>
-				<hr class="my-4">
-				<p class="lead text-left">This paper proposes a benchmarking model for evaluating accuracy performance of 3D printers</p>
-											
-				</div>
-
-				
+				<div></div>
 				
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
+				
 			</div>
 			
-
-
 			<!-- Content -->
 			<div class="modal-body">
-	
 				<div class="container-fluid text-left">
+
+					<div class="jumbotron">
+						<h1 class="modal-title " id="{{ Projets.folder | append: "-" | append: Projets.id }}">Towards a standard experimental protocol for open source additive manufacturing.</h1>
+						<hr class="my-4">
+						<p class="lead text-left">This paper proposes a benchmarking model for evaluating accuracy performance of 3D printers</p>
+													
+					</div>
 					<div class="row">
 
 						<h4>Goal:</h4>
@@ -455,56 +453,54 @@
 				<div class="container-fluid">
 
 					<div class="row">
-						<div class="col-12 col-md-3 text-center">
-							
-							<figure class="figure"> 
-								<img src="{{ site.baseurl | append: page.Folder-Images | append: "authors/FC-200X200.jpg" }}"
-								class="figure-img img-fluid rounded-circle" alt="Methodology" style="max-height:170px"  >
-								<figcaption class="figure-caption">          
-									<p>Fabio Cruz</p>
-								</figcaption>
-							</figure>
-						</div>	
+						
+						{% assign data = site.data.projets.Authors %}
+				       
+				        {% for Authors in data %}	
 
-						<div class="col-12 col-md-3 text-center">
-							
-							<figure class="figure"> 
-								<img src="{{ site.baseurl | append: page.Folder-Images | append: "authors/FC-200X200.jpg" }}"
-								class="figure-img img-fluid rounded-circle" alt="Methodology" style="max-height:170px"  >
-								<figcaption class="figure-caption">          
-									<p>Fabio Cruz</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							
-							<figure class="figure"> 
-								<img src="{{ site.baseurl | append: page.Folder-Images | append: "authors/Laurent-MULLER-240x320.jpg" }}"
-								class="figure-img img-fluid rounded-circle" alt="Methodology" style="max-height:170px"  >
-								<figcaption class="figure-caption">          
-									<p>Fabio Cruz</p>
-								</figcaption>
-							</figure>
-						</div>	
-						<div class="col-12 col-md-3 text-center">
-							
-							<figure class="figure"> 
-								<img src="{{ site.baseurl | append: page.Folder-Images | append: "authors/Mauricio-Camargo.jpg" }}"
-								class="figure-img img-fluid rounded-circle" alt="Methodology" style="max-height:170px"  >
-								<figcaption class="figure-caption">          
-									<p>Fabio Cruz</p>
-								</figcaption>
-							</figure>
-						</div>														
+					        {% if Authors.articles contains "Standard-Protocol" %}
+					        
+								<div class="col-12 col-md-3 text-center">
+																
+									<figure class="figure"> 
+										<img src="{{ site.baseurl | append: page.Folder-Images | append: "authors/" | append: Authors.photo }}"
+										class="figure-img img-fluid rounded-circle" style="max-height:170px"  >
+										<figcaption class="figure-caption">          
+											<p>{{ Authors.name }}</p>
+											<small>{{ Authors.title }}</small> <br>
+
+											{% if Authors.linkedin %}
+												<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+											{% endif %}
+											
+											{% if Authors.google-scholar %}
+												<a href=""><i class="ai ai-google-scholar-square ai-2x" aria-hidden="true"></i></a>
+											{% endif %}
+											{% if Authors.researchgate %}
+												<a href=""><i class="ai ai-researchgate-square ai-2x" aria-hidden="true"></i></a>
+											{% endif %}
+											{% if Authors.mendeley %}
+												<a href=""><i class="ai ai-mendeley-square ai-2x" aria-hidden="true"></i></a>
+											{% endif %}
+											
+											
+										</figcaption>
+									</figure>
+								</div>
+
+							{% endif %}	
+						{% endfor %}		
+
 					</div>
+					
 
 					<div class="row">	
 
 						<div class="col-12">						
-							<a class="btn btn-primary btn-lg" href="http://dx.doi.org/10.1080/17452759.2014.919553" role="button">
+							<a class="btn btn-primary" href="http://dx.doi.org/10.1080/17452759.2014.919553" role="button">
 							Learn more</a>
 					
-							<button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>	
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>	
 						</div>
 					</div>
 				</div>	

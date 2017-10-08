@@ -2,6 +2,13 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// Importing from the Folder of Reveal
+
+//@import "css/reveal.scss";
+//@import "css/theme/source/white";
+
+
+
 
 // Importing from the Sass folder
 @import "1-Tools/1-Tools.sass";
