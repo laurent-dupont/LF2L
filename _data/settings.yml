@@ -8,3 +8,25 @@ banner:
 - {image: 'Banner-test-2.png',
   prioridad: '',
   }
+
+
+Equipe:
+- name: Laure Morel
+  image: 'Equipe-200x200.png'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- name: Pascal Lhoste
+  image: 'Equipe-200x200.png'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- name: Laurent Dupont
+  image: 'Equipe-200x200.png'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- name: Giovanny Arbelaez
+  image: 'Equipe-200x200.png'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- name: Fabio Cruz
+  image: 'Equipe-200x200.png'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- name: Gregory Dupont
+  image: 'Equipe-200x200.png'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  

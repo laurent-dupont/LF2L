@@ -1,7 +1,8 @@
 - title: Accueil
   url: /
+
 - title: Concept
-  url: Sections/Concept/index.html
+  url: Concept/
   sublinks:
     - title: Fab Living Lab... Qu'est ce que c'est?
       url: /Sections/Concept/FabLivingLab/
@@ -11,6 +12,16 @@
       url: /Sections/Concept/Presse/
     - title: Partenaires et Chartes
       url: /Sections/Concept/Partners-Chartes/
+
+- title: Nos projects
+  url: /contact.html
+  sublinks:
+    - title: Ecole de Chirurgie
+      url: /Sections/Communautes/Entreprises/
+    - title: separator
+    - title: Green FabLab
+      url: /Sections/Projets/Green-Fablab/
+
 - title: Communauté
   url: /contact.html
   sublinks:
@@ -24,6 +35,7 @@
       url: /Sections/Communautes/Universitaires/
     - title: Institutions et collectivités
       url: /customer-support.html
+
 - title: Lieu & Equipement
   url: /store.html
   sublinks:
@@ -35,13 +47,19 @@
       url: /documentation.html
     - title: Partenaires et Chartes
       url: /customer-support.html
+
 - title: Info pratiques
   url: /support.html
   sublinks:
-    - title: FAQ
-      url: /faq.html
-    - title: Documentation
+    - title: Équipe
+      url: /Sections/Info-Pratique/Equipe/
+    - title: Tarif
       url: /documentation.html
-    - title: separator
-    - title: Customer Support
+    - title: Accès
+      url: /Sections/Info-Pratique/Acces/
+    - title: Contact
       url: /customer-support.html
+    - title: Tutoriel pour nos machines
+      url: /customer-support.html
+
+

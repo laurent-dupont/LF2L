@@ -66,6 +66,7 @@ exclude:
   - Gemfile.lock
   - yarn.lock
   - package.json
+  - .DS_Store
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
