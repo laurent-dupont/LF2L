@@ -470,17 +470,17 @@
 											<small>{{ Authors.title }}</small> <br>
 
 											{% if Authors.linkedin %}
-												<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+												<a href="{{ Authors.linkedin }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 											{% endif %}
 											
 											{% if Authors.google-scholar %}
-												<a href=""><i class="ai ai-google-scholar-square ai-2x" aria-hidden="true"></i></a>
+												<a href="{{ Authors.google-scholar }}"><i class="ai ai-google-scholar-square ai-2x" aria-hidden="true"></i></a>
 											{% endif %}
 											{% if Authors.researchgate %}
-												<a href=""><i class="ai ai-researchgate-square ai-2x" aria-hidden="true"></i></a>
+												<a href="{{ Authors.researchgate }}"><i class="ai ai-researchgate-square ai-2x" aria-hidden="true"></i></a>
 											{% endif %}
 											{% if Authors.mendeley %}
-												<a href=""><i class="ai ai-mendeley-square ai-2x" aria-hidden="true"></i></a>
+												<a href="{{ Authors.mendeley }}"><i class="ai ai-mendeley-square ai-2x" aria-hidden="true"></i></a>
 											{% endif %}
 											
 											
