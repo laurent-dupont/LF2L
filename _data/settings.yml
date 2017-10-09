@@ -30,3 +30,31 @@ Equipe:
   image: 'Equipe-200x200.png'  
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
   
+
+News:
+- title: L'est Republicain
+  image: 'News-1.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Pascal Lhoste
+  image: 'News-2.jpg'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Laurent Dupont
+  image: 'News-3.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Giovanny Arbelaez
+  image: 'News-4.jpg'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Fabio Cruz
+  image: 'News-5.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Gregory Dupont
+  image: 'News-6.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+
+
+
+
+
+
+
+

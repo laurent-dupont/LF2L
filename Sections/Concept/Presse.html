@@ -1,13 +1,73 @@
 ---
 layout: default
 title: On parle de nous
+
+Images-Path: /assets/img/News/
+
 ---
 
 
 <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">On parle de nous</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
+  <div class="container">
+    <h1 class="display-3">On parle de nous</h1>
+    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+
+<!-- 
+<div class="container">
+	<div class="row">
+		
+			{% for News in site.data.settings.News %}
+				<div class="col-3">
+					<a href="{{ site.baseurl | append: page.Images-Path | append: News.image }}" data-toggle="lightbox" data-gallery="example-gallery"
+					data-title="{{ News.title }}"  data-footer="{{ News.description }}">
+				    <img src="{{ site.baseurl | append: page.Images-Path | append: News.image }}" class="img-fluid">
+				</a>
+				</div>				
+			{% endfor %}
+			
+				
+	</div>
+</div>
+ -->
+
+<!-- <div class="container">
+	<div class="row">
+		
+			{% for News in site.data.settings.News %}
+				<div class="col-3" style=" background-image: url('img/News/News-4.jpg'); 
+				background-size: cover; background-position: center; background-repeat: no-repeat; ">
+					<a href="{{ site.baseurl | append: page.Images-Path | append: News.image }}" data-toggle="lightbox" data-gallery="example-gallery"
+					data-title="{{ News.title }}"  data-footer="{{ News.description }}">
+				    
+				</a>
+				</div>				
+			{% endfor %}
+			
+				
+	</div>
+</div>
+ -->
+
+<div class="container">
+	<div class="row">
+		{% for News in site.data.settings.News %}
+			<div class="col-4 col-md-3 ">
+				<div class="card">
+					
+					<a href="{{ site.baseurl | append: page.Images-Path | append: News.image }}" data-toggle="lightbox" data-gallery="example-gallery" data-title="{{ News.title }}"  data-footer="{{ News.description }}">
+
+						<img src="{{ site.baseurl | append: page.Images-Path | append: News.image }}" class="card-img-top img-fluid" 
+						 alt="Card image cap" style="max-height: 50%">
+					</a>
+					
+				  <div class="card-block">
+				    <p class="card-text">{{ News.title }}</p>
+				  </div>
+				</div>
+			</div>	
+		{% endfor %}
+	</div>		
+</div>
