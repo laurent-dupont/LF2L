@@ -34,7 +34,7 @@
     - title: Universitaires
       url: /Sections/Communautes/Universitaires/
     - title: Institutions et collectivités
-      url: /customer-support.html
+      url: /Sections/Communautes/Institutions/
 
 - title: Lieu & Equipement
   url: /store.html
@@ -54,12 +54,12 @@
     - title: Équipe
       url: /Sections/Info-Pratique/Equipe/
     - title: Tarif
-      url: /documentation.html
+      url: /Sections/Info-Pratique/Tarif/
     - title: Accès
       url: /Sections/Info-Pratique/Acces/
     - title: Contact
-      url: /customer-support.html
+      url: /Sections/Info-Pratique/Contact/
     - title: Tutoriel pour nos machines
-      url: /customer-support.html
+      url: /Sections/Info-Pratique/Tutoriel/
 
 
