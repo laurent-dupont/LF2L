@@ -12,22 +12,27 @@ banner:
 
 Equipe:
 - name: Laure Morel
-  image: 'Equipe-200x200.png'
+  image: 'LM.jpg'
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 - name: Pascal Lhoste
-  image: 'Equipe-200x200.png'  
+  image: 'PL.jpg'  
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 - name: Laurent Dupont
-  image: 'Equipe-200x200.png'
+  image: 'LD.jpg'
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 - name: Giovanny Arbelaez
-  image: 'Equipe-200x200.png'  
+  image: 'GA.jpg'  
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 - name: Fabio Cruz
-  image: 'Equipe-200x200.png'
-  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  image: 'FC.jpg'
+  description: Ingénieur de Recherche sur le recyclage dans l'impression 3D
+  linkedin: https://www.linkedin.com/in/fabio-cruz/
+  google-scholar: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=es
+  academia: https://univ-lorraine.academia.edu/FabioACruzS
+  researchgate: https://www.researchgate.net/profile/Fabio_Cruz_Sanchez
+  mendeley: https://www.mendeley.com/profiles/fabio-a-cruz-sanchez/  
 - name: Gregory Dupont
-  image: 'Equipe-200x200.png'  
+  image: 'GD.jpg'  
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
   
 
