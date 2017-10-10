@@ -7,19 +7,22 @@ zoom: 15
 size: 800x200
 ---
 
-<div class="container-fluid">
-  <div class="jumbotron">
-    <h1 class="display-3">Accès</h1> 
-  </div>
+
+<div class="jumbotron">
+	<div class="container">
+		<h1 class="display-3">Accès</h1>
+	</div>
 </div>
 
+
 <div class="container">
+	<div class="row">
+	
 	<p class="lead">Ci dessous plan du quartier (cliquer pour agrandir) – depuis la Gare prendre la ligne 1 (Tram) Direction Essey Mouzimpré – descendre à l’arrêt Saint Georges, puis 3-4 min de marche. </p>
 	
-
-	<!-- {% if page.locations %} 
-	<img src="http://maps.googleapis.com/maps/api/staticmap?{% for location in page.locations %}{% if forloop.first %}center={{location}}&markers=color:blue%7C{{location}}{% else %}&markers=color:blue%7C{{location}}{% endif %}{% endfor %}&zoom={% if page.zoom %}{{page.zoom}}{% else %}13{% endif %}&size={{page.size}}&scale=2&sensor=true&visual_refresh=true" alt="" class="my-5">
-	{% endif %} -->
-	<iframe src="https://www.google.com/maps/d/embed?mid=zjoguh0NVOXo.kZTYPT-5FrXA" height="480" width="640"></iframe>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe src="https://www.google.com/maps/d/embed?mid=zjoguh0NVOXo.kZTYPT-5FrXA"  width="80%"></iframe>
+		</div>		
+	</div>
 </div>
 
