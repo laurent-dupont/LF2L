@@ -41,12 +41,11 @@
   sublinks:
     - title: Notre espace aux ateliers du bras vert
       url: /Sections/Lieu-Equipement/Lieu-Equipement/
-    - title: Publication Scientifiques LF2L/ERPI
+    - title: Nomad'Lab - FabLab Mobile
       url: /documentation.html
-    - title: On parle de nous
+    - title: Photos du LF2L
       url: /documentation.html
-    - title: Partenaires et Chartes
-      url: /customer-support.html
+    
 
 - title: Info pratiques
   url: /support.html
