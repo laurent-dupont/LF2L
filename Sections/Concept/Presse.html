@@ -9,9 +9,7 @@ Images-Path: /assets/img/News/
 
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-3">On parle de nous</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <h3 class="display-3">On parle de nous</h3>    
   </div>
 </div>
 
@@ -54,15 +52,15 @@ Images-Path: /assets/img/News/
 <div class="container">
 	<div class="row">
 		{% for News in site.data.settings.News %}
-			<div class="col-4 col-md-3 ">
-				<div class="card">
+			<div class="col-6 col-md-3 ">
+				<div class="card my-3">
 					
-					<a href="{{ site.baseurl | append: page.Images-Path | append: News.image }}" data-toggle="lightbox" data-gallery="example-gallery" data-title="{{ News.title }}"  data-footer="{{ News.description }}">
-
-						<img src="{{ site.baseurl | append: page.Images-Path | append: News.image }}" class="card-img-top img-fluid" 
-						 alt="Card image cap" style="max-height: 50%">
+					<a href="{{ site.baseurl | append: page.Images-Path | append: News.image }}" data-toggle="lightbox" 
+					data-gallery="example-gallery" data-title="{{ News.title }}"  data-footer="{{ News.description }}">
+					<img src="{{ site.baseurl | append: page.Images-Path | append: News.image }}" class="card-img-top img-fluid" 
+						 alt="Card image cap"  style="width: 100%; height:250px; object-fit: cover;overflow: hidden;">
 					</a>
-					
+					<hr class="featurette-divider my-1">
 				  <div class="card-block">
 				    <p class="card-text">{{ News.title }}</p>
 				  </div>
@@ -71,3 +69,18 @@ Images-Path: /assets/img/News/
 		{% endfor %}
 	</div>		
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

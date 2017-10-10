@@ -56,6 +56,34 @@ News:
   image: 'News-6.jpg'
   description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 
+Partenaires:
+- title: LorNTech
+  image: 'LorNtech.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Technopole Renaissance
+  image: 'Technopole-Renaissance.jpg'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: French-Tech
+  image: 'French-Tech.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Metropole du Grand Nancy
+  image: 'MGN.PNG'  
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: ENEDIS
+  image: 'ENEDIS.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: EDF
+  image: 'EDF.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Université de Lorraine
+  image: 'UL.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: Lorraine INP
+  image: 'INP.jpg'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+- title: F2I-UIMM
+  image: 'F2I-UIMM.png'
+  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 
 
 
