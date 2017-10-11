@@ -42,9 +42,9 @@
     - title: Notre espace aux ateliers du bras vert
       url: /Sections/Lieu-Equipement/Lieu-Equipement/
     - title: Nomad'Lab - FabLab Mobile
-      url: /documentation.html
+      url: /Sections/Lieu-Equipement/Nomadlab/
     - title: Photos du LF2L
-      url: /documentation.html
+      url: /Sections/Lieu-Equipement/Photos/
 
 - title: Info pratiques
   url: /support.html
@@ -56,8 +56,8 @@
     - title: Accès
       url: /Sections/Info-Pratique/Acces/
     - title: Contact
-      url: /Sections/Info-Pratique/Contact/
+      url: /Sections/Info-Pratique/Formulaire/
     - title: Tutoriel pour nos machines
-      url: /Sections/Info-Pratique/Tutoriel/
+      url: /Sections/Info-Pratique/Ressources/
 
 

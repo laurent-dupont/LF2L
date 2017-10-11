@@ -14,11 +14,11 @@ title: Equipe LF2L
 <div class="container">
 	<div class="row">
 		{% for Equipe in site.data.settings.Equipe %}
-			<div class="col-lg-4">
+			<div class="col-lg-4 text-center">
 				<img class="rounded-circle mt-5" src="{{ site.baseurl }}/assets/img/Info-Pratique/Equipe/{{ Equipe.image }}" alt="Generic placeholder image" width="200" height="200">
 
 				<h2 class="mt-3">{{ Equipe.name }}</h2>
-				<p>{{ Equipe.description }}<br>
+				<p class="text-left">{{ Equipe.description }}<br>
 								
 
 				{% if Equipe.linkedin %}

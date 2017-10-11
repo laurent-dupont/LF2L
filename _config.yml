@@ -54,9 +54,14 @@ markdown: kramdown
 #theme: minima
 plugins:
   - jekyll-feed
+  - indii-jekyll-flickr
 
 include: ["prueba"]
 
+flickr:
+  screen_name: You
+  api_key: 039eb467bcfe412309bd0e09c2aa8f61
+  api_secret: fe34a61c35c84fea3950bcf6eac
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
