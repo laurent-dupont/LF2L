@@ -1,55 +1,64 @@
-<section>
-<nav class="navbar navbar-toggleable-md " id="Navigation">
+<section class="container-fluid" id="Navigation">
 
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navegacion" 
-	aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
-		<!-- <span class="navbar-toggler-icon"></span> -->
-		<span style="color: white"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
-	</button>
-  
-  <!-- Adding the LF2L Brand -->
-  	<a class="navbar-brand hidden-lg-up" style="color: white" href="{{ site.baseurl }}/">Menu</a>
+<div class="row">
+	<div class="col-12 col-md-11 offset-md-1">
 
-	<div class="collapse navbar-collapse" id="navegacion">
+		<nav class="navbar navbar-toggleable-md " >
 
-    
-	<ul class="navbar-nav">
-	        
-	        {% assign links = site.data.navigation %}
-	        {% for link in links %}
-	            {% assign class = nil %}
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navegacion" 
+			aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<span style="color: white"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+			</button>
+		  
+		  <!-- Adding the LF2L Brand -->
+		  	<a class="navbar-brand hidden-lg-up" style="color: white" href="{{ site.baseurl }}/">Menu</a>
 
-	            {% if page.url contains link.url %}
-	                {% assign class = 'active' %}
-	            {% endif %}
+			<div class="collapse navbar-collapse" id="navegacion">
 
-	            {% if link.sublinks %}
-	                <li class="nav-item dropdown {{ class }}">
-	                    <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ link.url }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} 
-	                    	<span class="caret"></span></a>
-	                    
-		                    <div class="dropdown-menu">
-		                        {% for sublink in link.sublinks %}
-		                            {% if sublink.title == 'separator' %}
-									<div class="dropdown-divider"></div>
-		                                <!-- <li role="separator" class="divider"></li> -->
-		                            {% else %}		                                
-									<a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-		                                
-		                            {% endif %}
-		                        {% endfor %}
-		                    </div>
-	                </li>
-	            {% else %}
-	                <li class="nav-item {{ class }}">
-	                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-	                </li>
-	            {% endif %}
-	        {% endfor %}
-	    </ul>
+		    
+			<ul class="navbar-nav">
+			        
+			        {% assign links = site.data.navigation %}
+			        {% for link in links %}
+			            {% assign class = nil %}
 
+			            {% if page.url contains link.url %}
+			                {% assign class = 'active' %}
+			            {% endif %}
+
+			            {% if link.sublinks %}
+			                <li class="nav-item dropdown {{ class }}">
+			                    <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ link.url }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} 
+			                    	<span class="caret"></span></a>
+			                    
+				                    <div class="dropdown-menu">
+				                        {% for sublink in link.sublinks %}
+				                            {% if sublink.title == 'separator' %}
+											<div class="dropdown-divider"></div>
+				                                <!-- <li role="separator" class="divider"></li> -->
+				                            {% else %}		                                
+											<a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+				                                
+				                            {% endif %}
+				                        {% endfor %}
+				                    </div>
+			                </li>
+			            {% else %}
+			                <li class="nav-item {{ class }}">
+			                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+			                </li>
+			            {% endif %}
+			        {% endfor %}
+			    </ul>
+
+			</div>
+		</nav>
+
+		
 	</div>
-</nav>
+</div>
+
 </section>
 
 
