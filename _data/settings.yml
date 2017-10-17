@@ -2,27 +2,35 @@
 
 # For the Banner in the Home Page
 banner:
-- {image: 'Banner-test.jpg',
+- {image: 'Banner01.jpg',
   prioridad: 'active',
   }
-- {image: 'Banner-test-2.png',
+- {image: 'Banner02.jpg',
   prioridad: '',
   }
-
+- {image: 'Banner03.jpg',
+  prioridad: '',
+  }
+- {image: 'Banner04.jpg',
+  prioridad: '',
+  }
 
 Equipe:
 - name: Laure Morel
   image: 'LM.jpg'
-  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  description: Directrice du laboratoire ERPI
 - name: Pascal Lhoste
   image: 'PL.jpg'  
-  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  description: Directeur de l'ENSGSI
 - name: Laurent Dupont
   image: 'LD.jpg'
-  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  description: Responsable Scientifique du LF2L Ingénieur de Recherche ERPI / ENSGSI
 - name: Giovanny Arbelaez
   image: 'GA.jpg'  
-  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  description: Ingénieur de Recherche sur l'évaluation de l'acceptabilité des nouveaux produits
+  linkedin: https://www.linkedin.com/in/gaarbelaez/
+  google-scholar: https://scholar.google.fr/citations?user=qj178msAAAAJ&hl=en
+  mendeley: https://www.mendeley.com/profiles/giovanny-arbelaez/ 
 - name: Fabio Cruz
   image: 'FC.jpg'
   description: Ingénieur de Recherche sur le recyclage dans l'impression 3D
@@ -33,7 +41,7 @@ Equipe:
   mendeley: https://www.mendeley.com/profiles/fabio-a-cruz-sanchez/  
 - name: Gregory Dupont
   image: 'GD.jpg'  
-  description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  description: Responsable Technique et Matériaux
   
 
 News:
