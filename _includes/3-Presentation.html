@@ -1,4 +1,4 @@
-<section>
+<section class="hidden-sm-down">
 	
 	<!-- <div class="Background-Title"> -->
 
@@ -8,7 +8,7 @@
 				{% for banner in site.data.settings.banner %}
 				
 				<div class="carousel-item {{ banner.prioridad }}">					
-					<img class="d-block w-100" src="assets/img/1-Accueil/Banner/{{ banner.image }}" alt="client-face">
+					<img class="d-block w-100" src="assets/img/1-Accueil/Banner/{{ banner.image }}" alt="client-face" style="object-fit: cover">
 				</div>				
 				
 				{% endfor %}
@@ -29,6 +29,11 @@
 
 	<!-- </div> -->
 
+</section>
+
+
+<section>
+	
 
 	<!-- Logo Lorraine Fab Living Lab -->
 	<div class="container" id="Presentation">
@@ -48,7 +53,7 @@
 
 
 		<div class="row justify-content-center">
-			<div class="col-4 col-sm-2  text-center">
+			<div class="col-4 col-sm-3  text-center">
 				<figure class="figure">
 					<img src="{{ site.baseurl}}/assets/img/1-Accueil/Presentation/icon-materialiser.png" class="figure-img img-fluid rounded"  alt="Icon-Materialiser">					
 					<figcaption class="figure-caption"><h4><b>Materialiser</b></h4></figcaption>
@@ -56,7 +61,7 @@
 								
 			</div>
 
-			<div class="col-4 col-sm-2  text-center">
+			<div class="col-4 col-sm-3  text-center">
 				<figure class="figure">
 					<img src="{{ site.baseurl}}/assets/img/1-Accueil/Presentation/icon-associer.png" class="figure-img img-fluid "  alt="Icon-Materialiser">					
 					<figcaption class="figure-caption"><h4><b>Associer</b></h4></figcaption>
@@ -64,7 +69,7 @@
 								
 			</div>
 			
-			<div class="col-4 col-sm-2  text-center">
+			<div class="col-4 col-sm-3  text-center">
 				<figure class="figure">
 					<img src="{{ site.baseurl}}/assets/img/1-Accueil/Presentation/icon-innover.png"  class="figure-img img-fluid "  
 					alt="Icon-Materialiser">					
@@ -146,10 +151,6 @@
 
 			
 		</div>
-
-
-
-
 
 		<!-- </div>
 		</div> -->
