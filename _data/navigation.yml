@@ -14,16 +14,16 @@
       url: /Sections/Concept/Partners-Chartes/
 
 - title: Nos projects
-  url: /contact.html
+  url: Projets/
   sublinks:
-    - title: Ecole de Chirurgie
-      url: /Sections/Communautes/Entreprises/
+    - title: Innovation on santé
+      url: /Sections/Projets/Health-innovation/
     - title: separator
     - title: Green FabLab
       url: /Sections/Projets/Green-Fablab/
 
 - title: Communauté
-  url: /contact.html
+  url: Projets/
   sublinks:
     - title: Entreprises
       url: /Sections/Communautes/Entreprises/
@@ -56,7 +56,7 @@
     - title: Accès
       url: /Sections/Info-Pratique/Acces/
     - title: Contact
-      url: /Sections/Info-Pratique/Formulaire/
+      url: /Sections/Info-Pratique/Contact/
     - title: Tutoriel pour nos machines
       url: /Sections/Info-Pratique/Ressources/
 

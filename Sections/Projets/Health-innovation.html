@@ -1,0 +1,259 @@
+---
+layout: default
+title: Health Innovation
+
+
+Folder-Images: /assets/img/5-Projets/Green-Fablab/
+Folder-Images-Proj-1: /assets/img/5-Projets/Green-Fablab/articles/proj-1/  
+
+Image-BG: BG-Title.jpg
+Image-Logo: Logo-GF.png
+
+---
+
+
+
+<section>
+	<!-- Image Background of the title-->
+	<div class="header-communautes" style="background-image: url( {{ site.baseurl | append: page.Folder-Images | append: page.Image-BG }});"></div>
+
+	<div class="container-fluid" id="header-communautes">
+
+		<!-- <div class="row">
+			<div class="col-1"></div>
+			<div class="col-10 Presentation">
+		 -->	
+			
+
+		<div class="row">
+			<div class="col-12">
+				<img src="{{ site.baseurl | append: page.Folder-Images | append: page.Image-Logo }}" class="img-fluid mx-auto d-block" alt="Green FabLab Title" style="width: 100%">		
+			</div>				
+		</div>
+
+
+		<div class="row justify-content-center">
+			<div class="col-4 col-sm-2  text-center">
+				<figure class="figure">
+					<img src="{{ site.baseurl | append: page.Folder-Images | append: "Icons/" | append: "3DP.svg" }}" 
+					class="figure-img img-fluid Icon"  
+					alt="Icon Fabrication">					
+					<figcaption class="figure-caption">
+						<h6>Fabrication</h6>
+					</figcaption>
+				</figure>
+								
+			</div>
+
+			<div class="col-4 col-sm-2  text-center">
+				<figure class="figure">
+					<img src="{{ site.baseurl | append: page.Folder-Images | append: "Icons/" | append: "Recycling.svg" }}" 
+					class="figure-img img-fluid Icon"  
+					alt="Icon Recycling">					
+					<figcaption class="figure-caption">
+						<h6>Recycling</h6>
+					</figcaption>
+				</figure>
+			</div>
+			
+
+			<div class="col-4 col-sm-2  text-center">
+				<figure class="figure">
+					<img src="{{ site.baseurl | append: page.Folder-Images | append: "Icons/" | append: "Local.svg"}}" 
+					class="figure-img img-fluid Icon"  
+					alt="Icon Local">					
+					<figcaption class="figure-caption">
+						<h6>Local</h6>
+					</figcaption>
+				</figure>
+								
+			</div>
+			
+		</div>
+	
+	
+		<div class="row justify-content-center bg-faded">
+				
+			<div class="col-12 col-md-8">
+				<h4 class="text-center mt-5">
+					<b>Creating a local recycling system would open up new opportunities for the circular economy</b>
+				</h4> <br>
+
+				<p class="text-justify">Creating a local recycling system would open up new opportunities for the circular economy</p>
+
+			</div>
+													
+						
+		</div>
+	
+		<!-- </div>
+		</div> -->
+	</div>
+</section>
+
+
+<section class="mt-5 pt-4">
+	<hr class="featurette-divider">
+	<div class="container marketing">
+
+		<h4 class="display-4 text-center ">Qu'est ce que c'est le Green FabLab</h4>	
+		<!-- START THE FEATURETTES -->
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette align-items-center">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">Créativité et Innovation 2D <span class="text-muted">It'll blow your mind.</span></h2>
+				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				<br>
+                    <a href="{{ site.baseurl | append: "/Sections/Projets/Green-Fablab-PPT/" }}" class="btn btn-info" role="button">See our presentation</a>
+                    
+
+			</div>
+			<div class="col-md-5">
+				<img class="featurette-image img-fluid mx-auto" 
+				src="http://placehold.it/400x300" alt="Seances de Creativité">							
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette align-items-center">			
+			<div class="col-md-5 order-md-1">
+				<img class="featurette-image img-fluid mx-auto" src="http://placehold.it/400x300" alt="Generic placeholder image">
+			</div>
+
+			<div class="col-md-7">
+				<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			</div>
+
+		</div>
+
+		<hr class="featurette-divider">
+		<!-- /END THE FEATURETTES -->
+	</div>
+
+</section>
+
+<section class="mt-5">
+	<div class="container">
+		
+		<h4 class="display-4 text-center my-4 ">Nos partenaires</h4>	
+		<hr class="featurette-divider">
+
+		
+	</div>
+
+
+		
+</section>
+
+
+<section class="mt-5">
+
+	<div class="container">
+		<h4 class="display-4 text-center my-4 ">Notre recherche</h4>	
+
+
+      <div class="row text-center text-lg-left">
+
+			 
+		{% for Projets in site.data.projets.Green-Fablab %}			 
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
+			    <div class="hovereffect">
+			        <img class="img-fluid img-thumbnail" 
+			        src="{{site.baseurl | append: page.Folder-Images | append: "articles/" | append: Projets.folder | append: "thumb.png"}}" alt="">
+			        <div class="overlay">
+						<h2>{{ Projets.name }}</h2>						
+						<p class="info" data-toggle="modal" data-target="{{ Projets.id | prepend: "#"}} " >{{ Projets.description }} 
+							<br> <span class="more-details" style="float: right;">More details...</span></p>
+						
+						{% include Projets/Green-Fablab/{{ Projets.folder }}/description.html %}
+
+			        </div>
+			    </div>
+			</div>
+			
+	
+      	{% endfor %}
+      </div>
+
+    </div>
+
+
+	<hr class="featurette-divider">
+</section>	
+
+
+
+
+
+<!-- Nos Etudiants -->
+<section>
+	<div class="jumbotron">
+		<div class="container">
+			
+			<h1 class="display-3 my-4 text-center">Nos étudiants</h1>
+
+	 		<div class="row">
+		
+
+				<div id="Controles-Equiper-GF" class="carousel slide" data-ride="carousel" data-interval="8000">
+					
+				
+					<div class="carousel-inner">
+						{% for banner in site.data.projets.Equipe-Green-Fablab %}
+						
+						<div class="carousel-item {{ banner.prioridad }}">	
+							
+						
+								<figure class="figure col-md-2">
+									<img src="{{ site.baseurl | append: page.Folder-Images | append: "equipe/" | append: banner.avatar }}"
+									class="figure-img img-fluid rounded" alt="Students Green FabLab">
+									<figcaption class="figure-caption">{{ banner.name}}.</figcaption>
+									<small>Someone famous</small>									
+								</figure>
+				
+								<blockquote  class="blockquote col-md-10">					
+									{{ banner.quote}}
+									<small>Someone famous</small>
+				                </blockquote>
+
+						</div>
+
+						{% endfor %}
+					</div>
+
+					<!-- Controls of the Carousel -->
+					<!-- Previous -->
+					<a class="carousel-control-prev" href="#Controles-Equiper-GF" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+
+					<a class="carousel-control-next" href="#Controles-Equiper-GF" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				
+				</div>
+
+			</div>
+
+		</div> <!-- Container  -->
+	</div> <!-- Jumbotron  -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
