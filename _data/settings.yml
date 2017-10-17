@@ -2,16 +2,16 @@
 
 # For the Banner in the Home Page
 banner:
-- {image: 'Banner01.jpg',
+- {image: 'banner01.jpg',
   prioridad: 'active',
   }
-- {image: 'Banner02.jpg',
+- {image: 'banner02.jpg',
   prioridad: '',
   }
-- {image: 'Banner03.jpg',
+- {image: 'banner03.jpg',
   prioridad: '',
   }
-- {image: 'Banner04.jpg',
+- {image: 'banner04.jpg',
   prioridad: '',
   }
 
