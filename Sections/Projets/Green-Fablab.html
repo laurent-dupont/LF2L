@@ -103,8 +103,15 @@ Image-Logo: Logo-GF.png
 
 		<div class="row featurette align-items-center">
 			<div class="col-md-7">
-				<h2 class="featurette-heading">Créativité et Innovation 2D <span class="text-muted">It'll blow your mind.</span></h2>
-				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				<h2 class="featurette-heading">Impression 3D Open-Source (OS)</h2>
+				<p>
+					C'est l’une des technologies identifiées comme ayant un fort potentiel d’impact sur les systèmes de production, mais aussi plus largement, sur notre style de vie dans les
+					années à venir. Sa principale particularité par rapport à la FA classique est le caractère collaboratif de
+					l’open source qui permet des évolutions rapides et créatives, et ceci à moindre coût.</p>
+					
+				<p>
+					Cette révolution technologique tpeut se développer tout en intégrant les défis sociétaux actuels
+					et plus particulièrement les enjeux environnementaux.</p>
 				<br>
                     <a href="{{ site.baseurl | append: "/Sections/Projets/Green-Fablab-PPT/" }}" class="btn btn-info" role="button">See our presentation</a>
                     
@@ -124,8 +131,11 @@ Image-Logo: Logo-GF.png
 			</div>
 
 			<div class="col-md-7">
-				<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				<h2 class="featurette-heading">Potentiel de recyclage de polymères dédiés à la Impression 3D OS</h2>
+				<p>Des recherches permettant de mieux développer les innovations sur les systèmes
+					de recyclage de déchets actuels grâce à la fabrication additive open-source et ainsi, contribuer tout du
+					moins partiellement, à résoudre la problématique globale que représente l’accumulation de matière
+					plastique dans la nature.</p>
 			</div>
 
 		</div>
@@ -213,12 +223,25 @@ Image-Logo: Logo-GF.png
 									<img src="{{ site.baseurl | append: page.Folder-Images | append: "equipe/" | append: banner.avatar }}"
 									class="figure-img img-fluid rounded" alt="Students Green FabLab">
 									<figcaption class="figure-caption">{{ banner.name}}.</figcaption>
-									<small>{{ banner.ecole}}</small>									
+									<p><small>{{ banner.ecole}}</small> <br>
+										
+										 
+											
+											{% if banner.linkedin %}
+												<a href="{{ banner.linkedin }}">
+													<i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+											{% endif %}
+											
+											{% if banner.email %}
+												<a href="{{ banner.email }}">
+													<i class="fa fa-envelope" aria-hidden="true"></i></a>
+											{% endif %}											
+									</p>	
+									
 								</figure>
 				
 								<blockquote  class="blockquote col-md-10">					
-									{{ banner.quote}}
-									<small>Someone famous</small>
+									{{ banner.quote}}									
 				                </blockquote>
 
 						</div>

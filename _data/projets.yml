@@ -61,23 +61,27 @@ Authors:
 Equipe-Green-Fablab:
 - {avatar: 'Romain.jpg',
   name: 'Romain SCHILDKNECHT',
-  prioridad: 'active',
+  email: rom.schildknecht@gmail.com,
+  prioridad: '',
   title: 'Engineer',
   quote: '<p>I enjoyed participating in the Green FabLab project because it helps to create a short consumer circuit by discovering the plastic filament extrusion process. We worked on the use of the Xcalibur extruder. It is an easy to use machine but with many parameters. However it was a real pleasure to work in the laboratory with teams of different horizons and cultures.</p>',
   logo: 'logo-CESI.jpg',
-  ecole: CESI
+  ecole: EI.CESI Nancy
 }
 
 - {avatar: 'Alexis.jpg',
   name: 'Alexis SCHNELL',
+  email: alexis.schnell@orange.fr,
   prioridad: '',
   title: 'Engineer',
   quote: '<p>I liked the field of study in FabLab. Recycle, upgrade and extrude plastic material is very important for the world. Using equiments in Fablab was very interesting. I learned to use several equiments and I could to contribute to the advencement of the FabLab. I liked the working atmosphere and I would like to thanks all the members of the team for this internship.</p>',
   logo: 'logo-CESI.jpg',
-  ecole: CESI
+  ecole: EI.CESI Nancy
 }
 - {avatar: 'Santiago.jpg',
   name: 'Santiago REVORI',
+  email: jsrevori@gmail.com,
+  linkedin: "https://www.linkedin.com/in/jose-santiago-revori-5b3934ba/",
   prioridad: '',
   title: 'Universidad Nacional de Mar del Plata',
   quote: '<p>From the last five months, we worked with a team of three people with a extruder machine situated in the Lorraine FabLiving Lab. First of all, we learned how to use the 3D printing machines and also the scanner. After that we spent the rest of the time working in the extruder who provides the material for the printers. We learned how to do the filaments and also did a tutorial to show to everyone how to use it. For that, we made differents test and solved several problems that we found during this process.</p>',
@@ -86,17 +90,28 @@ Equipe-Green-Fablab:
 }
 - {avatar: 'Antonio.jpg',
   name: 'Antonio Luis Araújo Silva',
+  email: antonio9237@gmail.com,
   prioridad: '',
   title: 'Master Recherche MIDI - ENSGSI.',
   quote: "I am a Brazilian student of engineering. I was in the green fablab doing a 6 month internship for the validation of a master's degree. I worked on a recycling project on thermoplastics for 3D printing. I've been to different laboratories, but some elements of the Fablab green draw attention. One such feature is its openness to the public, community citizens, teachers, researchers and students can enjoy the resources of the laboratory. It is a really comfortable environment to work with, we have the feeling that it is really producing something pertinent and solid, since the experimentation in this laboratorie is well explored",
   logo: 'logo-TORINO.png',
   ecole: Universidade Regional do Cariri ( URCA)
 }
-- {avatar: 'Women.png',
-  name: 'Ramsés M de Albuquerque',
+- {avatar: 'Maxime.jpg',
+  name: 'Maxime JACQUE',
+  linkedin: "https://www.linkedin.com/in/maxime-jacque-a50353144",
   prioridad: '',
   title: 'Engineer',
-  quote: "I enjoyed work with the Green FabLab project. During my internship period, I used recycled filaments for the manufacture of dry dental models. It was very gratifying, I learned a lot about recycling, additive manufacturing and how to work with multicutural teams.",
+  quote: "Nous avons réalisé un distributeur de granulés plastiques pour alimenter l'extrudeuse de fil, servant à l'impression 3D, durant 5 semaines. J'ai aimé l'ambiance de travail et la conception de prototypes avec les machines du Fab Living Lab.",
   logo: 'logo-UNCUYO.png',
-  ecole: CESI
+  ecole: EI.CESI Nancy
+}
+- {avatar: 'Nicolas.jpg',
+  name: 'Nicolas GALLAND',
+  email: n.galland@hotmail.fr,
+  prioridad: 'active',
+  title: 'Engineer',
+  quote: "J'ai fais partis d'un projet en équipe pendant 5 semaines avec un but 'vert. Comment réduire les dechets plastique provenant de l'impression 3D en le recyclant ? L'objetcif étais de créer un prototype pour réguler l'alimentation en granule de la machine utilisé pour le recyclage plastique. J'ai apprécié l'atmosphère du Lorraine Fab Living Lab. Les gens du fab lab sont disponible et c'était un plaisir de travailler avec eux. Durant le projet nous étions libre de choisir notre voie de création. Merci pour cette liberté et pour votre bonne humeur !",
+  logo: 'logo-UNCUYO.png',
+  ecole: EI.CESI Nancy
 }
