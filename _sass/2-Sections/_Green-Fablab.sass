@@ -19,7 +19,7 @@
 
 .hovereffect
 	width: 100%
-	height: 150%
+	height: 100%
 	float: left
 	overflow: hidden
 	position: relative
@@ -28,7 +28,7 @@
 
 	.overlay
 		width: 100%
-		height: 150%
+		height: 100%
 		position: absolute
 		overflow: hidden
 		top: 0
@@ -43,7 +43,7 @@
 	img.img-thumbnail
 		display: block
 		position: relative
-		top: 30%
+		top: 25%
 		border: none
 		//left: 0
 		//right: 0
@@ -69,6 +69,7 @@
 
 
 	p.info		
+		font-size: 1rem
 		display: inline-block
 		text-decoration: none
 		margin: 10px 0 0 2px
@@ -99,7 +100,10 @@
 
 
 #Controles-Equiper-GF
-	
+
+	.carousel-control-prev
+		left: 0px
+
 	.carousel-item
 
 		img
@@ -118,10 +122,10 @@
 		border-left: 10px solid #ccc
 		quotes: "\201C""\201D""\2018""\2019"
 
-	&:before
-		color: #ccc
-		content: open-quote
-		font-size: 5rem
-		line-height: 0.1em
-		margin-right: 0.25em
-		vertical-align: -0.4em
+		&:before
+			color: #ccc
+			content: open-quote
+			font-size: 5rem
+			line-height: 0.1em
+			margin-right: 0.25em
+			vertical-align: -0.4em
