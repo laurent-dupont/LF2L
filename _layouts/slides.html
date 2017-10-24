@@ -4,7 +4,7 @@
    <head>
 
      
-    {% include head.html %} 
+    
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="{{ "/reveal.js/css/reveal.css" | prepend: site.baseurl }}"/>
     
-     <link rel="stylesheet" href="{{ "/reveal.js/css/theme/Green-Fablab.css" | prepend: site.baseurl }}" id="theme"/>
+    <link rel="stylesheet" href="{{ "/reveal.js/css/theme/Green-Fablab.css" | prepend: site.baseurl }}" id="theme"/>
 
 
     <!-- {%if page.theme %}
@@ -29,6 +29,8 @@
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
+
+    {% include head.html %} 
 
     
 
