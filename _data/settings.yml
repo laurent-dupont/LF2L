@@ -25,6 +25,10 @@ Equipe:
 - name: Laurent Dupont
   image: 'LD.jpg'
   description: Responsable Scientifique du LF2L Ingénieur de Recherche ERPI / ENSGSI
+  linkedin: https://www.linkedin.com/in/laurent-dupont-6805b910/
+  researchgate: https://www.researchgate.net/profile/Laurent_Dupont7
+  google-scholar: https://scholar.google.fr/citations?user=05uOEFcAAAAJ&hl=fr
+  mendeley: https://www.mendeley.com/profiles/laurent-dupont2/
 - name: Giovanny Arbelaez
   image: 'GA.jpg'  
   description: Ingénieur de Recherche sur l'évaluation de l'acceptabilité des nouveaux produits
