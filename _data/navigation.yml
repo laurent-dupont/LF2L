@@ -13,9 +13,12 @@
     - title: Partenaires et Chartes
       url: /Sections/Concept/Partners-Chartes/
 
-- title: Nos projects
+- title: Nos projets
   url: Projets/
   sublinks:
+    - title: Lorraine Smart Cities Living Lab
+      url: /Sections/Projets/Smart-Cities/
+    - title: separator
     - title: Innovation on santé
       url: /Sections/Projets/Health-innovation/
     - title: separator
