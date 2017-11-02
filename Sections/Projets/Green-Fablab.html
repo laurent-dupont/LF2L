@@ -212,6 +212,44 @@ Image-Logo: Logo-GF.png
 
 </section>
 
+<!-- Notre recherche -->
+<section class="mt-5">
+
+	<div class="container">
+		<h4 class="display-4 text-center my-5 ">Notre recherche</h4>	
+
+
+      <div class="row text-center text-lg-left">
+
+			 
+		{% for Projets in site.data.projets.Green-Fablab %}			 
+
+			<div class="col-12 col-sm-6 col-md-4  mt-3">
+			    <div class="hovereffect">
+			        <img class="img-fluid img-thumbnail" 
+			        src="{{site.baseurl | append: page.Folder-Images | append: "articles/" | append: Projets.folder | append: "thumb.png"}}" alt="">
+			        <div class="overlay">
+						<h2>{{ Projets.name }}</h2>						
+						<p class="info" data-toggle="modal" data-target="{{ Projets.id | prepend: "#"}} " >{{ Projets.description }} 
+							<br> <span class="more-details" style="float: right;">More details...</span></p>
+						
+						{% include Projets/Green-Fablab/{{ Projets.folder }}/description.html %}
+
+			        </div>
+			    </div>
+			</div>
+			
+	
+      	{% endfor %}
+      </div>
+
+    </div>
+
+
+	<hr class="featurette-divider">
+</section>	
+
+<!-- Nos partenaires -->
 <section class="mt-5">
 	<div class="container">
 		
@@ -251,41 +289,6 @@ Image-Logo: Logo-GF.png
 </section>
 
 
-<section class="mt-5">
-
-	<div class="container">
-		<h4 class="display-4 text-center my-5 ">Notre recherche</h4>	
-
-
-      <div class="row text-center text-lg-left">
-
-			 
-		{% for Projets in site.data.projets.Green-Fablab %}			 
-
-			<div class="col-12 col-sm-6 col-md-4  mt-3">
-			    <div class="hovereffect">
-			        <img class="img-fluid img-thumbnail" 
-			        src="{{site.baseurl | append: page.Folder-Images | append: "articles/" | append: Projets.folder | append: "thumb.png"}}" alt="">
-			        <div class="overlay">
-						<h2>{{ Projets.name }}</h2>						
-						<p class="info" data-toggle="modal" data-target="{{ Projets.id | prepend: "#"}} " >{{ Projets.description }} 
-							<br> <span class="more-details" style="float: right;">More details...</span></p>
-						
-						{% include Projets/Green-Fablab/{{ Projets.folder }}/description.html %}
-
-			        </div>
-			    </div>
-			</div>
-			
-	
-      	{% endfor %}
-      </div>
-
-    </div>
-
-
-	<hr class="featurette-divider">
-</section>	
 
 
 

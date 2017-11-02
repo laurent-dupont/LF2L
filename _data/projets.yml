@@ -117,12 +117,12 @@ Equipe-Green-Fablab:
 }
 
 Partenaires-GF:
-- title: Ecole nationale supérieure en génie des systèmes et de l'innovation (ENSGSI)
-  image: 'logo-ENSGSI.png'
-  url: https://www.ensgsi.univ-lorraine.fr/
 - title: École d'ingénieurs ei.CESI
   image: 'logo-CESI.jpg'  
-  url: 'https://www.eicesi.fr/'
+  url: 'https://www.eicesi.fr/' 
+- title: Ecole nationale supérieure en génie des systèmes et de l'innovation (ENSGSI)
+  image: 'logo-ENSGSI.jpg'
+  url: https://www.ensgsi.univ-lorraine.fr/
 - title: Laboratoire Réactions et Génie des Procédés (LRGP)
   image: 'logo-LGRP.jpg'
   url: http://lrgp-nancy.cnrs.fr/

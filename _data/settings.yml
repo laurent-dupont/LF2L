@@ -19,6 +19,7 @@ Equipe:
 - name: Laure Morel
   image: 'LM.jpg'
   description: Directrice du laboratoire ERPI
+  google-scholar: https://scholar.google.fr/citations?user=H5y9cUwAAAAJ&hl=es
 - name: Pascal Lhoste
   image: 'PL.jpg'  
   description: Directeur de l'ENSGSI
