@@ -126,3 +126,11 @@ Partenaires-GF:
 - title: Laboratoire Réactions et Génie des Procédés (LRGP)
   image: 'logo-LGRP.jpg'
   url: http://lrgp-nancy.cnrs.fr/
+
+Partenaires-HI:
+- title: Ecole nationale supérieure en génie des systèmes et de l'innovation (ENSGSI)
+  image: 'logo-ENSGSI.jpg'
+  url: https://www.ensgsi.univ-lorraine.fr/
+- title: Ecole de Chirurgie de Nancy
+  image: 'logo-EC.png'
+  url: www.ecoledechirurgie-nancy.fr
